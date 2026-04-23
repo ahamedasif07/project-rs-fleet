@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Background & Border (Full Width) */}
-      <nav className="w-full  bg-[#FAFAFA]/90 backdrop-blur-md border-b fixed top-0 z-50">
+      <nav className="w-full  bg-[#FAFAFA] backdrop-blur-md  fixed top-0 z-50">
         {/* Content Container (Limited to 7xl & Centered) */}
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
