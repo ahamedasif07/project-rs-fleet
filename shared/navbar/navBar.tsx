@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
           >
             {/* Drawer Header */}
             <div className="flex justify-between items-center p-6 border-b border-white/10">
-              <p className="text-white  tracking-widest font-bold">MENU</p>
+              <p className="text-slate-600 leading-relaxed text-base mb-6">MENU</p>
               <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 hover:bg-white/10 rounded-md transition-colors"

@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
             <h2 className="text-3xl font-black text-slate-900 tracking-tighter">
               FLEET<span className="text-primary">SERVICES</span>
             </h2>
-            <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
+            <p className="text-slate-600 leading-relaxed text-base mb-6">
               Providing professional hydraulic and mobile fleet services across
               California and Nevada. 24/7 emergency support at your fingertips.
             </p>
@@ -169,7 +169,7 @@ const Footer: React.FC = () => {
               <div className="absolute inset-0 bg-slate-900 translate-y-[101%] group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
 
               <div className="relative z-10">
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] mb-2 opacity-80">
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
                   Emergency Line
                 </p>
                 <h3 className="text-xl font-black mb-4">+1 877-349-8789</h3>
@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
 
         {/* --- Bottom Section --- */}
         <div className="border-t border-slate-100 pt-10 flex flex-col md:flex-row justify-center items-center gap-6">
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+          <p className="text-slate-600 leading-relaxed text-base mb-6">
             © {currentYear} Fleet Services. Built with{" "}
             <span className="text-primary">Passion</span>.
           </p>

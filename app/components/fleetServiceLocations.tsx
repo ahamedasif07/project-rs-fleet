@@ -123,7 +123,7 @@ const FleetLocations: React.FC = () => {
                       size={16}
                       className="text-slate-400 shrink-0 mt-1 group-hover:text-white/80 transition-colors"
                     />
-                    <p className="text-slate-500 text-sm font-medium leading-relaxed group-hover:text-white/90 transition-colors">
+                    <p className="text-slate-600 leading-relaxed text-base mb-6">
                       {loc.address}
                     </p>
                   </div>
@@ -132,7 +132,7 @@ const FleetLocations: React.FC = () => {
                       size={16}
                       className="text-primary shrink-0 group-hover:text-white transition-colors"
                     />
-                    <p className="text-slate-900 font-bold text-sm tracking-tight group-hover:text-white transition-colors">
+                    <p className="text-slate-600 leading-relaxed text-base mb-6">
                       {loc.phone}
                     </p>
                   </div>

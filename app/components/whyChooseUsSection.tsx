@@ -85,7 +85,7 @@ export default function PremiumFeatures() {
                     {item.title}
                   </h3>
 
-                  <p className="text-slate-600 leading-relaxed text-sm group-hover:text-slate-700 transition-colors duration-300">
+                  <p className="text-slate-600 leading-relaxed text-base mb-6">
                     {item.desc}
                   </p>
                 </div>

@@ -61,7 +61,7 @@ const FleetSavingsSection = () => {
               <span className="text-primary ">Fleet Partners</span>
             </h2>
 
-            <p className="text-zinc-500 text-lg mb-4 leading-relaxed max-w-xl">
+            <p className="text-slate-600 leading-relaxed text-base mb-6">
               We provide cost-effective truck and vehicle repairs that keep your
               business moving. Our specialized fleet plans are designed to
               minimize downtime and maximize reliability.
@@ -85,7 +85,7 @@ const FleetSavingsSection = () => {
               ))}
             </div>
 
-            <button className="group w-fit bg-zinc-900 hover:bg-primary text-white px-10 py-5 text-xs font-black transition-all duration-500 flex items-center gap-4 tracking-[0.2em] uppercase rounded-md shadow-xl">
+            <button className="group w-fit bg-primary hover:bg-zinc-900 text-white px-10 py-5 text-xs font-black transition-all duration-500 flex items-center gap-4 tracking-[0.2em] uppercase rounded-md shadow-xl">
               Become a Fleet Partner
               <ArrowRight
                 size={16}

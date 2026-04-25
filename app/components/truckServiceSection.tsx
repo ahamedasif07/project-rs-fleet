@@ -104,7 +104,7 @@ const TruckServiceSection: React.FC = () => {
                 performed onsite
               </h2>
 
-              <p className="text-slate-600 leading-relaxed text-base mb-8 relative">
+              <p className="text-slate-600 leading-relaxed text-base mb-6">
                 Our certified technicians bring dealer-level expertise directly
                 to your fleet, minimizing transportation costs and maximizing
                 your operational uptime.

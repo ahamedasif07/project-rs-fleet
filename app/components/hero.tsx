@@ -73,7 +73,7 @@ const HeroSlider = () => {
           </h1>
 
           {/* Short Description */}
-          <p className="text-sm md:text-base text-gray-300 max-w-lg mx-auto mb-10 font-medium leading-relaxed opacity-90">
+          <p className="text-slate-100 leading-relaxed text-base mb-6">
             Professional roadside assistance and fleet maintenance. We minimize
             your downtime with rapid, certified heavy-duty solutions.
           </p>

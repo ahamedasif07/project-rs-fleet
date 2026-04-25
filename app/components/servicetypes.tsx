@@ -34,9 +34,10 @@ const ServiceTypes: React.FC = () => {
             Repair Solutions
           </h1>
 
-          <p className="text-zinc-300 text-lg md:text-xl max-w-xl leading-relaxed">
-            Expert maintenance and emergency roadside assistance delivered
-            directly to your yard. We keep your business moving forward.
+          <p className="text-slate-200 leading-relaxed text-base mb-6">
+            Expert maintenance and emergency roadside assistance <br />{" "}
+            delivered directly to your yard. We keep your business moving
+            forward.
           </p>
         </div>
 
@@ -52,12 +53,12 @@ const ServiceTypes: React.FC = () => {
                 <h3 className="text-xl font-bold text-zinc-900">
                   Onsite Mobile
                 </h3>
-                <p className="text-primary text-xs font-bold mt-2 uppercase tracking-tighter">
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
                   Scheduled Care
                 </p>
               </div>
             </div>
-            <p className="text-zinc-500 text-sm leading-relaxed mb-6">
+            <p className="text-slate-600 leading-relaxed text-base mb-6">
               Full-service maintenance performed at your yard. Eliminate
               unnecessary travel time and fuel expenses.
             </p>
@@ -79,12 +80,12 @@ const ServiceTypes: React.FC = () => {
                 <h3 className="text-xl font-bold text-zinc-900">
                   Emergency Support
                 </h3>
-                <p className="text-red-600 text-xs mt-2 font-bold uppercase tracking-tighter">
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
                   24/7 Availability
                 </p>
               </div>
             </div>
-            <p className="text-zinc-500 text-sm leading-relaxed mb-6">
+            <p className="text-slate-600 leading-relaxed text-base mb-6">
               Rapid response for trailer blowouts, air leaks, and breakdowns.
               Always ready for deployment.
             </p>
