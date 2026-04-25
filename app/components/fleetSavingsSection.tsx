@@ -17,38 +17,33 @@ const FleetSavingsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side: Image Slot with Gradient Background */}
-          <div className="relative">
-            {/* Background for Transparent Image */}
-            <div className="absolute inset-0 bg-gradient-to-br from-zinc-50 to-zinc-100 rounded-3xl" />
-
-            <div className="relative h-[400px] md:h-[550px] w-full overflow-hidden rounded-3xl">
-              {/* --- TRANSPARENT NEXT.JS IMAGE --- */}
+          <div className="relative p-4 md:p-0">
+            <div className="relative h-[400px] md:h-[550px] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-zinc-50 to-zinc-100">
               <Image
                 src="/assets/images/Gemini_Generated_Image_11kuui11kuui11ku-removebg-preview.png"
                 alt="Truck Repair Service"
                 fill
-                className="object-contain p-8 md:p-12 z-20" // object-contain ট্রান্সপারেন্ট ইমেজের জন্য সেরা
+                className="object-contain p-8 md:p-12 z-20"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
 
-              {/* Depth Overlay (Removed black, added subtle gradient) */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent z-10" />
-            </div>
 
-            {/* Floating Price Badge */}
-            <div className="absolute -top-6 -left-6 bg-primary p-6 md:p-8 rounded-2xl shadow-xl animate-bounce-slow z-30">
-              <div className="text-white font-black text-3xl md:text-5xl tracking-tighter leading-none">
-                $30/HR
+              {/* Floating Price Badge */}
+              <div className="absolute top-4 left-4 lg:top-4 lg:left-4 bg-primary p-4 md:p-6 lg:p-8 rounded-2xl shadow-xl animate-bounce-slow z-30">
+                <div className="text-white font-black text-lg md:text-xl lg:text-2xl tracking-tighter leading-none">
+                  $30/HR
+                </div>
+                <div className="text-white/90 text-[8px] md:text-[10px]  font-bold uppercase tracking-widest mt-1">
+                  Labor Savings
+                </div>
               </div>
-              <div className="text-white/90 text-[10px] md:text-xs font-bold uppercase tracking-widest mt-1">
-                Labor Savings
-              </div>
-            </div>
 
-            {/* Floating Trust Icon */}
-            <div className="absolute -bottom-8 right-10 bg-zinc-900 p-5 rounded-2xl shadow-2xl hidden md:block z-30">
-              <ShieldCheck className="text-primary w-10 h-10" />
+              {/* Floating Trust Icon */}
+              <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 bg-zinc-900 p-3 md:p-4 lg:p-5 rounded-2xl shadow-2xl z-30">
+                <ShieldCheck className="text-primary w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+              </div>
             </div>
           </div>
 
@@ -63,7 +58,7 @@ const FleetSavingsSection = () => {
 
             <h2 className="text-4xl md:text-6xl font-black text-zinc-900 mb-6 leading-[1.1] uppercase tracking-tighter">
               Unmatched Value For <br />
-              <span className="text-primary italic">Fleet Partners</span>
+              <span className="text-primary ">Fleet Partners</span>
             </h2>
 
             <p className="text-zinc-500 text-lg mb-10 leading-relaxed max-w-xl">
