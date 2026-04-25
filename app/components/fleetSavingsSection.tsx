@@ -18,7 +18,7 @@ const FleetSavingsSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side: Image Slot with Gradient Background */}
           <div className="relative p-4 md:p-0">
-            <div className="relative h-[400px] md:h-[550px] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-zinc-50 to-zinc-100">
+            <div className="relative h-[400px] md:h-[550px] w-full overflow-hidden rounded-md bg-gradient-to-br from-zinc-50 to-zinc-100">
               <Image
                 src="/assets/images/Gemini_Generated_Image_11kuui11kuui11ku-removebg-preview.png"
                 alt="Truck Repair Service"
@@ -31,7 +31,7 @@ const FleetSavingsSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent z-10" />
 
               {/* Floating Price Badge */}
-              <div className="absolute top-4 left-4 lg:top-4 lg:left-4 bg-primary p-4 md:p-6 lg:p-8 rounded-2xl shadow-xl animate-bounce-slow z-30">
+              <div className="absolute top-4 left-4 lg:top-4 lg:left-4 bg-primary p-4 md:p-6 lg:p-8 rounded-md shadow-xl animate-bounce-slow z-30">
                 <div className="text-white font-black text-lg md:text-xl lg:text-2xl tracking-tighter leading-none">
                   $30/HR
                 </div>
@@ -41,7 +41,7 @@ const FleetSavingsSection = () => {
               </div>
 
               {/* Floating Trust Icon */}
-              <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 bg-zinc-900 p-3 md:p-4 lg:p-5 rounded-2xl shadow-2xl z-30">
+              <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 bg-zinc-900 p-3 md:p-4 lg:p-5 rounded-md shadow-2xl z-30">
                 <ShieldCheck className="text-primary w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
               </div>
             </div>
@@ -68,7 +68,7 @@ const FleetSavingsSection = () => {
             </p>
 
             {/* Bullet Points */}
-            <div className="space-y-4 mb-6 bg-zinc-50 p-8 rounded-2xl border border-zinc-100">
+            <div className="space-y-4 mb-6 bg-zinc-50 p-8 rounded-md border border-zinc-100">
               {[
                 "Direct & Clear Communication",
                 "Multi-brand & Heavy Duty Expertise",
@@ -85,7 +85,7 @@ const FleetSavingsSection = () => {
               ))}
             </div>
 
-            <button className="group w-fit bg-zinc-900 hover:bg-primary text-white px-10 py-5 text-xs font-black transition-all duration-500 flex items-center gap-4 tracking-[0.2em] uppercase rounded-sm shadow-xl">
+            <button className="group w-fit bg-zinc-900 hover:bg-primary text-white px-10 py-5 text-xs font-black transition-all duration-500 flex items-center gap-4 tracking-[0.2em] uppercase rounded-md shadow-xl">
               Become a Fleet Partner
               <ArrowRight
                 size={16}

@@ -45,7 +45,7 @@ const ServiceTypes: React.FC = () => {
           {/* Card 01: Onsite Mobile Service */}
           <div className="group bg-white p-8 rounded-md shadow-2xl transform lg:hover:translate-x-4 transition-all duration-500 border border-zinc-100">
             <div className="flex items-center gap-5 mb-6">
-              <div className="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center group-hover:bg-primary transition-colors">
+              <div className="w-14 h-14 bg-zinc-100 rounded-md flex items-center justify-center group-hover:bg-primary transition-colors">
                 <Truck className="w-7 h-7 text-zinc-900 group-hover:text-white" />
               </div>
               <div>
@@ -72,7 +72,7 @@ const ServiceTypes: React.FC = () => {
           {/* Card 02: Emergency Service */}
           <div className="group bg-white/90 backdrop-blur-xl p-8 rounded-md shadow-2xl transform  lg:hover:translate-x-4 transition-all duration-500 border border-white/40">
             <div className="flex items-center gap-5 mb-6">
-              <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors">
+              <div className="w-14 h-14 bg-red-50 rounded-md flex items-center justify-center group-hover:bg-red-600 transition-colors">
                 <AlertTriangle className="w-7 h-7 text-red-600 group-hover:text-white" />
               </div>
               <div>

@@ -66,17 +66,17 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-4">
             {/* Desktop Call Button */}
             <div className="hidden lg:flex items-center gap-3">
-              <div className="animate-ring w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+              <div className="animate-ring w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-md">
                 <PhoneCall size={18} />
               </div>
-              <button className="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/30 transform hover:-translate-y-0.5 transition-all duration-300">
+              <button className="bg-primary text-white px-6 py-2 rounded-md text-sm font-semibold hover:shadow-lg hover:shadow-primary/30 transform hover:-translate-y-0.5 transition-all duration-300">
                 Request A Call
               </button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="lg:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
               onClick={() => setIsOpen(true)}
             >
               <Menu size={28} className="text-gray-800" />
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
               <p className="text-white  tracking-widest font-bold">MENU</p>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2 hover:bg-white/10 rounded-full transition-colors"
+                className="p-2 hover:bg-white/10 rounded-md transition-colors"
               >
                 <X size={24} color="white" />
               </button>
@@ -185,7 +185,7 @@ const Navbar: React.FC = () => {
                   isOpen ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <button className="w-full bg-white text-primary font-bold py-4 rounded-xl shadow-xl active:scale-95 transition-all">
+                <button className="w-full bg-white text-primary font-bold py-4 rounded-md shadow-xl active:scale-95 transition-all">
                   Request A Call
                 </button>
                 <div className="flex items-center justify-center gap-3 text-white/80 mt-6 font-medium">
