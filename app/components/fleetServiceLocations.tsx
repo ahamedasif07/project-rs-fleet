@@ -3,20 +3,9 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  MapPin,
-  Phone,
-  MessageSquare,
-  Clock,
-  ChevronRight,
-} from "lucide-react";
+import { MapPin, Phone, ArrowUpRight } from "lucide-react";
 
 // --- TypeScript Interfaces ---
-interface ServiceHeader {
-  title: string;
-  isBold: boolean;
-}
-
 interface LocationData {
   id: number;
   city: string;
@@ -25,13 +14,6 @@ interface LocationData {
   phone: string;
   services: string[];
 }
-
-const serviceLines: ServiceHeader[] = [
-  { title: "Mobile Service", isBold: false },
-  { title: "24/7 Emergency Service", isBold: true },
-  { title: "Equipment Service", isBold: false },
-  { title: "Hydraulic Service", isBold: false },
-];
 
 const locations: LocationData[] = [
   {
@@ -74,133 +56,111 @@ const locations: LocationData[] = [
     phone: "+1 877-349-8789",
     services: ["Mobile", "Emergency", "Equipment"],
   },
+  {
+    id: 6,
+    city: "Las Vegas",
+    state: "NV",
+    address: "Las Vegas Strip & Henderson Area",
+    phone: "+1 877-349-8789",
+    services: ["Mobile", "24/7 Emergency"],
+  },
 ];
 
 const FleetLocations: React.FC = () => {
   return (
-    <section className="bg-white py-20 px-6 font-sans">
-      <div className="max-w-[1600px] mx-auto">
-        {/* --- Top Header --- */}
-        <div className="mb-16">
-          <div className="flex flex-wrap items-center gap-3 text-[10px] tracking-[0.3em] mb-4">
-            {serviceLines.map((service, idx) => (
-              <React.Fragment key={idx}>
-                <span
-                  className={`uppercase ${service.isBold ? "font-black text-primary" : "font-medium text-slate-400"}`}
-                >
-                  {service.title}
-                </span>
-                {idx < serviceLines.length - 1 && (
-                  <span className="text-slate-200">•</span>
-                )}
-              </React.Fragment>
-            ))}
-          </div>
-          <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">
-            Regional <span className="text-primary">Network</span>
+    <section className="bg-[#FAFAF9] py-24 px-6 font-sans">
+      <div className="max-w-[1400px] mx-auto">
+        {/* --- Header --- */}
+        <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-4">
+            Our <span className="text-primary">Locations</span>
           </h2>
+          <div className="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        {/* --- 70/30 Grid Layout --- */}
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-8">
-          {/* LEFT SIDE: Map Image (70% - lg:col-span-7) */}
-          <div className="lg:col-span-7 h-fit lg:sticky lg:top-10">
-            <div className="relative w-full h-[620px] bg-slate-100 rounded-[3rem] overflow-hidden border border-slate-200 shadow-2xl">
-              <Image
-                src="/assets/images/map-image.png" // Replace with your actual map image
-                alt="Fleet Service Area Map"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
+        {/* --- Full Width Map (Top) --- */}
+        <div className="relative w-full h-[450px] md:h-[550px] rounded-md overflow-hidden  mb-16 group">
+          <Image
+            src="/assets/images/map-image.png"
+            alt="Fleet Service Area Map"
+            fill
+            className="object-contain transition-transform duration-1000 group-hover:scale-105"
+            priority
+          />
+        </div>
 
-          {/* RIGHT SIDE: Location Cards (30% - lg:col-span-3) */}
-          <div className="lg:col-span-3 space-y-4">
-            <div className="pb-4 border-b border-slate-100">
-              <h3 className="text-xl font-black text-slate-900 uppercase">
-                Service Hubs
-              </h3>
-              <p className="text-slate-400 text-xs">
-                Scroll to explore all regions
-              </p>
-            </div>
+        {/* --- 3-Grid Location Cards with Side-Slide Hover --- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {locations.map((loc) => (
+            <div
+              key={loc.id}
+              className="group relative bg-white p-8 rounded-md border border-slate-200 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 flex flex-col min-h-[200px]"
+            >
+              {/* --- SIDE SLIDE EFFECT LAYER --- */}
+              <div className="absolute inset-0 bg-primary translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></div>
 
-            <div className="space-y-4 max-h-[800px] overflow-y-auto pr-2 custom-scrollbar">
-              {locations.map((loc) => (
-                <div
-                  key={loc.id}
-                  className="group bg-white p-6 rounded-[2rem] border border-slate-100 hover:border-primary transition-all duration-500 shadow-sm hover:shadow-xl hover:shadow-red-500/5"
-                >
-                  {/* City Header */}
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <h4 className="text-xl font-black text-slate-900 leading-none mb-1 group-hover:text-primary transition-colors">
-                        {loc.city}
-                      </h4>
-                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                        {loc.state}
-                      </p>
-                    </div>
-                    <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
-                      <ChevronRight size={16} />
-                    </div>
+              {/* --- CARD CONTENT (Z-10 to stay above the slide) --- */}
+              <div className="relative z-10 flex flex-col h-full">
+                {/* Header */}
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <span className="text-primary font-bold text-[10px] uppercase tracking-[0.2em] group-hover:text-white transition-colors">
+                      {loc.state} Region
+                    </span>
+                    <h4 className="text-2xl font-black text-slate-900 mt-1 group-hover:text-white transition-colors">
+                      {loc.city}
+                    </h4>
                   </div>
-
-                  {/* Details */}
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-start gap-2">
-                      <MapPin
-                        size={14}
-                        className="text-slate-300 mt-1 shrink-0"
-                      />
-                      <p className="text-slate-500 text-xs leading-relaxed">
-                        {loc.address}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Phone size={14} className="text-primary shrink-0" />
-                      <p className="text-slate-900 font-bold text-xs">
-                        {loc.phone}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Services List - Minimalist */}
-                  <div className="flex flex-wrap gap-1.5 border-t border-slate-50 pt-4">
-                    {loc.services.map((s, i) => (
-                      <span
-                        key={i}
-                        className="text-[9px] font-extrabold bg-slate-50 text-slate-400 px-2 py-1 rounded-md uppercase group-hover:bg-red-50 group-hover:text-primary transition-colors"
-                      >
-                        {s}
-                      </span>
-                    ))}
+                  <div className="w-10 h-10 rounded-md bg-slate-50 flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-primary">
+                    <ArrowUpRight size={20} />
                   </div>
                 </div>
-              ))}
+
+                {/* Body */}
+                <div className="space-y-4 flex-grow mb-8">
+                  <div className="flex items-start gap-3">
+                    <MapPin
+                      size={16}
+                      className="text-slate-400 shrink-0 mt-1 group-hover:text-white/80 transition-colors"
+                    />
+                    <p className="text-slate-500 text-sm font-medium leading-relaxed group-hover:text-white/90 transition-colors">
+                      {loc.address}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone
+                      size={16}
+                      className="text-primary shrink-0 group-hover:text-white transition-colors"
+                    />
+                    <p className="text-slate-900 font-bold text-sm tracking-tight group-hover:text-white transition-colors">
+                      {loc.phone}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Footer Service List */}
+                <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-100 group-hover:border-white/20 transition-colors">
+                  {loc.services.map((s, i) => (
+                    <span
+                      key={i}
+                      className="text-[9px] font-black bg-slate-50 text-slate-400 px-3 py-1.5 rounded-sm uppercase transition-all group-hover:bg-white/20 group-hover:text-white"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Dispatch Link Overlay */}
+              <a
+                href={`tel:${loc.phone}`}
+                className="absolute inset-0 z-20 cursor-pointer"
+                aria-label={`Call ${loc.city}`}
+              />
             </div>
-          </div>
+          ))}
         </div>
       </div>
-
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: #f1f1f1;
-          border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #e2e8f0;
-          border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #dc2626;
-        }
-      `}</style>
     </section>
   );
 };
