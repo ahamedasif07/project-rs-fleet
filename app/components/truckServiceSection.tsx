@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 // Interface for Image Data
 interface ServiceImage {
@@ -72,10 +73,6 @@ const TruckServiceSection: React.FC = () => {
             <div className="bg-slate-50 p-8 md:p-12 border border-slate-100 shadow-sm rounded-xl relative group overflow-hidden">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-1000" />
 
-              <span className="absolute top-8 right-8 text-6xl font-bold text-slate-200/60 leading-none pointer-events-none">
-                03
-              </span>
-
               <div className="mb-6 relative inline-flex items-center justify-center w-14 h-14 bg-primary rounded-lg shadow-lg shadow-blue-100">
                 <svg
                   className="w-7 h-7 text-white"
@@ -110,8 +107,14 @@ const TruckServiceSection: React.FC = () => {
                 your operational uptime.
               </p>
 
-              <button className="relative px-8 py-4 bg-primary text-[14px] text-white font-bold rounded-lg shadow-lg shadow-blue-100 uppercase transition-all duration-300 hover:bg-primary/90 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+              <button className="relative z-30 group bg-primary hover:bg-zinc-900 text-white px-8 py-4 text-[10px] font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-[0.2em] uppercase shadow-2xl rounded-md overflow-hidden">
+                {/* Hover background slide effect (Optional but looks premium) */}
+                <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out -z-10"></span>
                 Schedule Service
+                <ArrowRight
+                  size={14}
+                  className="group-hover:translate-x-1 transition-transform duration-500"
+                />
               </button>
             </div>
           </div>

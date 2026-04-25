@@ -69,18 +69,18 @@ const Navbar: React.FC = () => {
               <div className="animate-ring w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-md">
                 <PhoneCall size={18} />
               </div>
-              <button className="bg-primary text-white px-6 py-2 rounded-md text-sm font-semibold hover:shadow-lg hover:shadow-primary/30 transform hover:-translate-y-0.5 transition-all duration-300">
+              <button className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl">
                 Request A Call
               </button>
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
-              onClick={() => setIsOpen(true)}
-            >
-              <Menu size={28} className="text-gray-800" />
-            </button>
+              <button
+                className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl lg:hidden"
+                onClick={() => setIsOpen(true)}
+              >
+                <Menu size={28} className="text-white" />
+              </button>
           </div>
         </div>
 
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
               <p className="text-slate-600 leading-relaxed text-base mb-6">MENU</p>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2 hover:bg-white/10 rounded-md transition-colors"
+                className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl"
               >
                 <X size={24} color="white" />
               </button>
@@ -185,7 +185,7 @@ const Navbar: React.FC = () => {
                   isOpen ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <button className="w-full bg-white text-primary font-bold py-4 rounded-md shadow-xl active:scale-95 transition-all">
+                <button className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl w-full">
                   Request A Call
                 </button>
                 <div className="flex items-center justify-center gap-3 text-white/80 mt-6 font-medium">

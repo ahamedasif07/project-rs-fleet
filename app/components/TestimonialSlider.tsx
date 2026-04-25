@@ -55,11 +55,11 @@ const TestimonialSlider = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-primary font-bold tracking-[0.3em] uppercase text-[10px] bg-primary/5 px-4 py-2 rounded-md">
+          <span className="text-primary font-black text-[11px] md:text-xs uppercase tracking-[0.4em]">
             Success Stories
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Trusted by Industry <span className="text-primary">Leaders</span>
+            Clients <span className="text-primary">Reviews</span>
           </h2>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto leading-relaxed">
             We measure our success through the growth and efficiency of the

@@ -56,11 +56,11 @@ export default function PremiumFeatures() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-sm uppercase tracking-[0.3em] text-primary font-bold mb-4">
+          <h2 className="text-primary font-black text-[11px] md:text-xs uppercase tracking-[0.4em] pb-2">
             The Advantage
           </h2>
           <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight">
-            What Makes Us{" "}
+            What Makes Us
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">
               Different
             </span>

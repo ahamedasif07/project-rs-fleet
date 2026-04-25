@@ -85,37 +85,13 @@ const FleetSavingsSection = () => {
               ))}
             </div>
 
-            <button className="group w-fit bg-primary hover:bg-zinc-900 text-white px-10 py-5 text-xs font-black transition-all duration-500 flex items-center gap-4 tracking-[0.2em] uppercase rounded-md shadow-xl">
+            <button className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl">
               Become a Fleet Partner
-              <ArrowRight
-                size={16}
-                className="group-hover:translate-x-2 transition-transform"
-              />
+              <ArrowRight size={16} className="transition-transform" />
             </button>
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .text-primary {
-          color: #d4af37;
-        }
-        .bg-primary {
-          background-color: #d4af37;
-        }
-        @keyframes bounce-slow {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-15px);
-          }
-        }
-        .animate-bounce-slow {
-          animation: bounce-slow 4s infinite ease-in-out;
-        }
-      `}</style>
     </section>
   );
 };

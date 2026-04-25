@@ -61,7 +61,7 @@ const HeroSlider = () => {
               Rapid Solutions
             </span>
             <div className="w-8 h-[1px] bg-white/30" />
-            <span className="text-white/80 font-bold text-[11px] md:text-xs uppercase tracking-[0.4em]">
+            <span className="text-primary font-black text-[11px] md:text-xs uppercase tracking-[0.4em]">
               24/7 Service
             </span>
           </div>
@@ -80,11 +80,11 @@ const HeroSlider = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-primary hover:bg-white text-white hover:text-black px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl">
+            <button className="bg-primary rounded-md hover:bg-white text-white hover:text-black px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl">
               <Phone size={16} className="animate-pulse" />
               Emergency Call
             </button>
-            <button className="bg-transparent border border-white/20 hover:bg-white/10 text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase backdrop-blur-md">
+            <button className="bg-transparent rounded-md border border-white/20 hover:bg-white/10 text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase backdrop-blur-md">
               View Services
               <ArrowRight size={16} />
             </button>

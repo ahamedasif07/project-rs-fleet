@@ -3,9 +3,10 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-// --- Custom Social SVGs (Fix for Lucide missing icons) ---
+// --- Custom Social SVGs ---
 const SocialIcons = {
   Facebook: () => (
     <svg
@@ -97,23 +98,28 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white border-t border-slate-100 pt-20 pb-10 px-6 font-sans">
       <div className="max-w-[1400px] mx-auto">
-        {/* --- Top Section --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Column 1: Brand Info */}
+          {/* Column 1: Brand Info (Logo Integrated) */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-black text-slate-900 tracking-tighter">
-              FLEET<span className="text-primary">SERVICES</span>
-            </h2>
-            <p className="text-slate-600 leading-relaxed text-base mb-6">
+            <Link href="/" className="inline-block">
+              <Image
+                src="/assets/images/IMG_3431-removebg-preview.png" // আপনার লোগো পাথ চেক করে নিন
+                alt="Fleet Services Logo"
+                width={180}
+                height={50}
+                className="object-contain"
+              />
+            </Link>
+            <p className="text-slate-600 leading-relaxed text-sm">
               Providing professional hydraulic and mobile fleet services across
               California and Nevada. 24/7 emergency support at your fingertips.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map(({ Icon, href }, i) => (
                 <Link
                   key={i}
                   href={href}
-                  className="w-10 h-10 rounded-md bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all duration-300"
+                  className="w-9 h-9 rounded-md bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all duration-300"
                 >
                   <Icon />
                 </Link>
@@ -121,7 +127,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Column 2: Navigation */}
           <div>
             <h4 className="text-slate-900 font-black uppercase tracking-widest text-[10px] mb-8">
               Navigation
@@ -161,21 +167,26 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Column 4: Dispatch Action Box */}
-          <div className="space-y-6">
+          <div className="space-y-6 group">
             <h4 className="text-slate-900 font-black uppercase tracking-widest text-[10px] mb-6">
               Dispatch Center
             </h4>
-            <div className="bg-primary p-6 rounded-md text-white group relative overflow-hidden">
+            <div className="bg-primary p-6 rounded-xl text-white group relative overflow-hidden">
+              {/* Background Slide Effect */}
               <div className="absolute inset-0 bg-slate-900 translate-y-[101%] group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
 
               <div className="relative z-10">
-                <p className="text-slate-600 leading-relaxed text-base mb-6">
+                <p className="text-white/80 text-xs font-bold uppercase tracking-widest mb-2">
                   Emergency Line
                 </p>
-                <h3 className="text-xl font-black mb-4">+1 877-349-8789</h3>
+                <h3 className="text-2xl font-black mb-6 tracking-tight">
+                  +1 877-349-8789
+                </h3>
+
+                {/* Default Black Button */}
                 <Link
                   href="tel:+18773498789"
-                  className="inline-flex items-center gap-2 text-xs font-black uppercase bg-white text-primary px-4 py-2 rounded-sm group-hover:text-white group-hover:bg-primary/20 transition-all border border-transparent group-hover:border-white/30"
+                  className="inline-flex items-center group-hover:bg-[#D4AF37] justify-center gap-2 w-full text-[10px] font-black uppercase bg-black text-white px-6 py-4 rounded-lg hover:bg-white hover:text-black transition-all duration-500 shadow-xl"
                 >
                   Call Now <ArrowUpRight size={14} />
                 </Link>
@@ -185,10 +196,10 @@ const Footer: React.FC = () => {
         </div>
 
         {/* --- Bottom Section --- */}
-        <div className="border-t border-slate-100 pt-10 flex flex-col md:flex-row justify-center items-center gap-6">
-          <p className="text-slate-600 leading-relaxed text-base mb-6">
-            © {currentYear} Fleet Services. Built with{" "}
-            <span className="text-primary">Passion</span>.
+        <div className="border-t border-slate-100 pt-6 text-center">
+          <p className="text-slate-500 text-sm font-medium">
+            © {currentYear} Fleet Services. Built with
+            <span className="text-primary font-bold"> Passion</span>.
           </p>
         </div>
       </div>

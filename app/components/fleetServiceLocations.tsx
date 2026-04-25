@@ -68,14 +68,13 @@ const locations: LocationData[] = [
 
 const FleetLocations: React.FC = () => {
   return (
-    <section className="bg-[#FAFAF9] py-24 px-6 font-sans">
+    <section className="bg-white py-24 px-6 font-sans">
       <div className="max-w-[1400px] mx-auto">
         {/* --- Header --- */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-4">
             Our <span className="text-primary">Locations</span>
           </h2>
-          <div className="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
 
         {/* --- Full Width Map --- */}
