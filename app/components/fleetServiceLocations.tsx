@@ -97,24 +97,24 @@ const FleetLocations: React.FC = () => {
           {locations.map((loc) => (
             <div
               key={loc.id}
-              className="group relative bg-white p-7 rounded-xl border border-slate-200 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 flex flex-col"
+              className="group relative bg-white p-7 rounded-xl border border-slate-200 overflow-hidden transition-all duration-500  hover:shadow-primary/20 flex flex-col"
             >
               {/* --- SIDE SLIDE EFFECT LAYER --- */}
-              <div className="absolute inset-0 bg-primary translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></div>
+              <div className="absolute inset-0 bg-primary/10 translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></div>
 
               {/* --- CARD CONTENT --- */}
               <div className="relative z-10 flex flex-col h-full">
                 {/* Header Section */}
                 <div className="flex justify-between items-start mb-5">
                   <div>
-                    <span className="text-primary font-bold text-[10px] uppercase tracking-widest group-hover:text-white/90 transition-colors">
+                    <span className="text-primary font-bold text-[10px] uppercase tracking-widest  transition-colors">
                       {loc.state} Region
                     </span>
-                    <h4 className="text-2xl font-black text-slate-900 mt-1 group-hover:text-white transition-colors leading-none">
+                    <h4 className="text-2xl font-black text-slate-900 mt-1  transition-colors leading-none">
                       {loc.city}
                     </h4>
                   </div>
-                  <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center transition-all duration-300 group-hover:bg-white/20 group-hover:text-white">
+                  <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center transition-all duration-300 group-hover:bg-white/20 ">
                     <ArrowUpRight size={18} />
                   </div>
                 </div>
@@ -124,18 +124,18 @@ const FleetLocations: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <MapPin
                       size={18}
-                      className="text-primary shrink-0 group-hover:text-white transition-colors"
+                      className="text-primary shrink-0  transition-colors"
                     />
-                    <p className="text-slate-600 text-sm font-medium leading-snug group-hover:text-white/90 transition-colors">
+                    <p className="text-slate-600 text-sm font-medium leading-snug /90 transition-colors">
                       {loc.address}
                     </p>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone
                       size={18}
-                      className="text-primary shrink-0 group-hover:text-white transition-colors"
+                      className="text-primary shrink-0  transition-colors"
                     />
-                    <p className="text-slate-600 text-sm font-bold group-hover:text-white transition-colors">
+                    <p className="text-slate-600 text-sm font-bold  transition-colors">
                       {loc.phone}
                     </p>
                   </div>
@@ -146,7 +146,7 @@ const FleetLocations: React.FC = () => {
                   {loc.services.map((s, i) => (
                     <span
                       key={i}
-                      className="text-[9px] font-black bg-slate-100 text-slate-500 px-2.5 py-1 rounded-md uppercase transition-all group-hover:bg-white/20 group-hover:text-white"
+                      className="text-[9px] font-black bg-slate-100 text-slate-500 px-2.5 py-1 rounded-md uppercase transition-all group-hover:bg-white/20 "
                     >
                       {s}
                     </span>
