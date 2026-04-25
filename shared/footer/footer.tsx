@@ -98,9 +98,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white border-t border-slate-100 pt-20 pb-10 px-6 font-sans">
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Column 1: Brand Info (Logo Integrated) */}
-          <div className="space-y-6">
+          <div className="space-y-2">
             <Link href="/" className="inline-block">
               <Image
                 src="/assets/images/IMG_3431-removebg-preview.png" // আপনার লোগো পাথ চেক করে নিন
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
                 className="object-contain"
               />
             </Link>
-            <p className="text-slate-600 leading-relaxed text-sm">
+            <p className="text-slate-600 leading-relaxed text-sm pb-4">
               Rapid Solutions provides professional hydraulic and mobile fleet
               services across California and Nevada, with 24/7 RS emergency
               support always within reach.
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
 
           {/* Column 2: Navigation */}
           <div>
-            <h4 className="text-slate-900 font-black uppercase tracking-widest text-[10px] mb-8">
+            <h4 className="text-slate-900 font-black uppercase tracking-widest text-[14px] mb-8">
               Navigation
             </h4>
             <ul className="space-y-4">
@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
 
           {/* Column 3: Services */}
           <div>
-            <h4 className="text-slate-900 font-black uppercase tracking-widest text-[10px] mb-8">
+            <h4 className="text-slate-900 font-black uppercase tracking-widest text-[14px] mb-8">
               Our Services
             </h4>
             <ul className="space-y-4">
@@ -169,7 +169,7 @@ const Footer: React.FC = () => {
 
           {/* Column 4: Dispatch Action Box */}
           <div className="space-y-6 group">
-            <h4 className="text-slate-900 font-black uppercase tracking-widest text-[10px] mb-6">
+            <h4 className="text-slate-900 font-black uppercase tracking-widest text-[14px] mb-6">
               Dispatch Center
             </h4>
             <div className="bg-primary p-6 rounded-xl text-white group relative overflow-hidden">

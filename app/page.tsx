@@ -7,6 +7,7 @@ import TruckServiceSection from "./components/truckServiceSection";
 import WhyChooseUsSection from "./components/whyChooseUsSection";
 import TestimonialSlider from "./components/TestimonialSlider";
 import FleetLocations from "./components/fleetServiceLocations";
+import FleetPartnerSection from "./components/fleetPartnerSection";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <WhyChooseUsSection />
       <TestimonialSlider />
       <FleetLocations />
+      <FleetPartnerSection />
     </div>
   );
 };
