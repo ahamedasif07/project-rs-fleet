@@ -50,7 +50,7 @@ const features: Feature[] = [
 
 export default function PremiumFeatures() {
   return (
-    <section className="relative bg-[#FFFFFF] py-24 px-4 overflow-hidden">
+    <section className="relative bg-[#fafafa] py-24 px-4 overflow-hidden">
       {/* Subtle Background Pattern or Soft Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/5 blur-[120px] rounded-full pointer-events-none opacity-50" />
 

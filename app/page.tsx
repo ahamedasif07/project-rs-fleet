@@ -1,10 +1,12 @@
 import React from "react";
 import HeroSlider from "./components/hero";
 import FleetSavingsSection from "./components/fleetSavingsSection";
-import ServiceSection from "./components/servicetypes";
+
 import ServiceTypes from "./components/servicetypes";
 import TruckServiceSection from "./components/truckServiceSection";
 import WhyChooseUsSection from "./components/whyChooseUsSection";
+import TestimonialSlider from "./components/TestimonialSlider";
+import FleetLocations from "./components/fleetServiceLocations";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <ServiceTypes />
       <TruckServiceSection />
       <WhyChooseUsSection />
+      <TestimonialSlider />
+      <FleetLocations />
     </div>
   );
 };
