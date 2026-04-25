@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="group relative flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-300"
+                className="group relative flex items-center gap-1 text-sm font-semibold text-gray-700 hover:text-primary transition-colors duration-300"
               >
                 {link.name}
                 {link.hasDropdown && (
@@ -75,12 +75,12 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Menu Button */}
-              <button
-                className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl lg:hidden"
-                onClick={() => setIsOpen(true)}
-              >
-                <Menu size={28} className="text-white" />
-              </button>
+            <button
+              className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl lg:hidden"
+              onClick={() => setIsOpen(true)}
+            >
+              <Menu size={28} className="text-white" />
+            </button>
           </div>
         </div>
 
@@ -106,7 +106,9 @@ const Navbar: React.FC = () => {
           >
             {/* Drawer Header */}
             <div className="flex justify-between items-center p-6 border-b border-white/10">
-              <p className="text-slate-600 leading-relaxed text-base mb-6">MENU</p>
+              <p className="text-slate-600 leading-relaxed text-base mb-6">
+                MENU
+              </p>
               <button
                 onClick={() => setIsOpen(false)}
                 className="bg-primary rounded-md hover:bg-black text-white hover:text-white px-8 py-4 text-xs font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-widest uppercase shadow-2xl"
