@@ -78,72 +78,72 @@ const FleetLocations: React.FC = () => {
           <div className="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        {/* --- Full Width Map (Top) --- */}
-        <div className="relative w-full h-[450px] md:h-[550px] rounded-md overflow-hidden  mb-16 group">
+        {/* --- Full Width Map --- */}
+        <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden mb-12 group shadow-lg bg-white border border-slate-200">
           <Image
             src="/assets/images/map-image.png"
             alt="Fleet Service Area Map"
             fill
-            className="object-contain transition-transform duration-1000 group-hover:scale-105"
+            className="object-contain p-4 transition-transform duration-1000 group-hover:scale-105"
             priority
           />
         </div>
 
-        {/* --- 3-Grid Location Cards with Side-Slide Hover --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* --- Location Cards --- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {locations.map((loc) => (
             <div
               key={loc.id}
-              className="group relative bg-white p-8 rounded-md border border-slate-200 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 flex flex-col min-h-[200px]"
+              className="group relative bg-white p-7 rounded-xl border border-slate-200 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 flex flex-col"
             >
               {/* --- SIDE SLIDE EFFECT LAYER --- */}
               <div className="absolute inset-0 bg-primary translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></div>
 
-              {/* --- CARD CONTENT (Z-10 to stay above the slide) --- */}
+              {/* --- CARD CONTENT --- */}
               <div className="relative z-10 flex flex-col h-full">
-                {/* Header */}
-                <div className="flex justify-between items-start mb-6">
+                {/* Header Section */}
+                <div className="flex justify-between items-start mb-5">
                   <div>
-                    <span className="text-primary font-bold text-[10px] uppercase tracking-[0.2em] group-hover:text-white transition-colors">
+                    <span className="text-primary font-bold text-[10px] uppercase tracking-widest group-hover:text-white/90 transition-colors">
                       {loc.state} Region
                     </span>
-                    <h4 className="text-2xl font-black text-slate-900 mt-1 group-hover:text-white transition-colors">
+                    <h4 className="text-2xl font-black text-slate-900 mt-1 group-hover:text-white transition-colors leading-none">
                       {loc.city}
                     </h4>
                   </div>
-                  <div className="w-10 h-10 rounded-md bg-slate-50 flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-primary">
-                    <ArrowUpRight size={20} />
+                  <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center transition-all duration-300 group-hover:bg-white/20 group-hover:text-white">
+                    <ArrowUpRight size={18} />
                   </div>
                 </div>
 
-                {/* Body */}
-                <div className="space-y-4 flex-grow mb-8">
+                {/* Body Section - Improved Spacing */}
+                <div className="space-y-3 mb-6 flex-grow">
                   <div className="flex items-start gap-3">
                     <MapPin
-                      size={16}
-                      className="text-slate-400 shrink-0 mt-1 group-hover:text-white/80 transition-colors"
+                      size={18}
+                      className="text-primary shrink-0 group-hover:text-white transition-colors"
                     />
-                    <p className="text-slate-600 leading-relaxed text-base mb-6">
+                    <p className="text-slate-600 text-sm font-medium leading-snug group-hover:text-white/90 transition-colors">
                       {loc.address}
                     </p>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone
-                      size={16}
+                      size={18}
                       className="text-primary shrink-0 group-hover:text-white transition-colors"
                     />
-                    <p className="text-slate-600 leading-relaxed text-base mb-6">
+                    <p className="text-slate-600 text-sm font-bold group-hover:text-white transition-colors">
                       {loc.phone}
                     </p>
                   </div>
                 </div>
 
                 {/* Footer Service List */}
-                <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-100 group-hover:border-white/20 transition-colors">
+                <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100 group-hover:border-white/20 transition-colors">
                   {loc.services.map((s, i) => (
                     <span
                       key={i}
-                      className="text-[9px] font-black bg-slate-50 text-slate-400 px-3 py-1.5 rounded-sm uppercase transition-all group-hover:bg-white/20 group-hover:text-white"
+                      className="text-[9px] font-black bg-slate-100 text-slate-500 px-2.5 py-1 rounded-md uppercase transition-all group-hover:bg-white/20 group-hover:text-white"
                     >
                       {s}
                     </span>
