@@ -20,7 +20,7 @@ const FleetSavingsSection = () => {
           <div className="relative p-4 md:p-0">
             <div className="relative h-[400px] md:h-[550px] w-full overflow-hidden rounded-md bg-gradient-to-br from-zinc-50 to-zinc-100">
               <Image
-                src="/assets/images/Gemini_Generated_Image_11kuui11kuui11ku-removebg-preview.png"
+                src="/assets/images/35 off.png"
                 alt="Truck Repair Service"
                 fill
                 className="object-contain p-8 md:p-12 z-20"
@@ -33,7 +33,7 @@ const FleetSavingsSection = () => {
               {/* Floating Price Badge */}
               <div className="absolute top-4 left-4 lg:top-4 lg:left-4 bg-primary p-4 md:p-6 lg:p-8 rounded-md shadow-xl animate-bounce-slow z-30">
                 <div className="text-white font-black text-lg md:text-xl lg:text-2xl tracking-tighter leading-none">
-                  $30/HR
+                  $35/HR
                 </div>
                 <div className="text-white/90 text-[8px] md:text-[10px]  font-bold uppercase tracking-widest mt-1">
                   Labor Savings
