@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Truck, AlertTriangle, ArrowRight, ShieldCheck } from "lucide-react";
 
-const ServiceHeroSection: React.FC = () => {
+const ServiceTypes: React.FC = () => {
   const serviceBg =
     "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?q=80&w=2000&auto=format&fit=crop";
 
@@ -43,7 +43,7 @@ const ServiceHeroSection: React.FC = () => {
         {/* RIGHT SIDE: Floating Cards (Take 5 columns) */}
         <div className="lg:col-span-5 space-y-6 relative">
           {/* Card 01: Onsite Mobile Service */}
-          <div className="group bg-white p-8 rounded-md shadow-2xl transform lg:hover:-translate-x-4 transition-all duration-500 border border-zinc-100">
+          <div className="group bg-white p-8 rounded-md shadow-2xl transform lg:hover:translate-x-4 transition-all duration-500 border border-zinc-100">
             <div className="flex items-center gap-5 mb-6">
               <div className="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center group-hover:bg-primary transition-colors">
                 <Truck className="w-7 h-7 text-zinc-900 group-hover:text-white" />
@@ -52,7 +52,7 @@ const ServiceHeroSection: React.FC = () => {
                 <h3 className="text-xl font-bold text-zinc-900">
                   Onsite Mobile
                 </h3>
-                <p className="text-primary text-xs font-bold uppercase tracking-tighter">
+                <p className="text-primary text-xs font-bold mt-2 uppercase tracking-tighter">
                   Scheduled Care
                 </p>
               </div>
@@ -79,7 +79,7 @@ const ServiceHeroSection: React.FC = () => {
                 <h3 className="text-xl font-bold text-zinc-900">
                   Emergency Support
                 </h3>
-                <p className="text-red-600 text-xs font-bold uppercase tracking-tighter">
+                <p className="text-red-600 text-xs mt-2 font-bold uppercase tracking-tighter">
                   24/7 Availability
                 </p>
               </div>
@@ -101,4 +101,4 @@ const ServiceHeroSection: React.FC = () => {
   );
 };
 
-export default ServiceHeroSection;
+export default ServiceTypes;

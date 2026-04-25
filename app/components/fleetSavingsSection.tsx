@@ -49,59 +49,26 @@ const FleetSavingsSection = () => {
 
           {/* Right Side: Content & Features */}
           <div className="flex flex-col">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-4">
               <span className="text-primary font-black text-xs uppercase tracking-[0.4em]">
                 Fleet Program
               </span>
               <div className="w-12 h-[1px] bg-zinc-200" />
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-black text-zinc-900 mb-6 leading-[1.1] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-black text-zinc-900 mb-4 leading-[1.1] uppercase tracking-tighter">
               Unmatched Value For <br />
               <span className="text-primary ">Fleet Partners</span>
             </h2>
 
-            <p className="text-zinc-500 text-lg mb-10 leading-relaxed max-w-xl">
+            <p className="text-zinc-500 text-lg mb-4 leading-relaxed max-w-xl">
               We provide cost-effective truck and vehicle repairs that keep your
               business moving. Our specialized fleet plans are designed to
               minimize downtime and maximize reliability.
             </p>
 
-            {/* Feature Cards */}
-            <div className="grid sm:grid-cols-2 gap-8 mb-12">
-              <div className="group">
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 bg-zinc-50 rounded-xl group-hover:bg-primary/10 transition-colors">
-                    <Zap className="text-primary w-6 h-6" />
-                  </div>
-                  <h4 className="text-zinc-900 font-bold text-sm uppercase tracking-wider">
-                    Prevent Repairs
-                  </h4>
-                </div>
-                <p className="text-zinc-400 text-xs pl-14">
-                  Eliminate repeat issues with our certified diagnostic
-                  technology.
-                </p>
-              </div>
-
-              <div className="group">
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="p-3 bg-zinc-50 rounded-xl group-hover:bg-primary/10 transition-colors">
-                    <Clock className="text-primary w-6 h-6" />
-                  </div>
-                  <h4 className="text-zinc-900 font-bold text-sm uppercase tracking-wider">
-                    Zero Downtime
-                  </h4>
-                </div>
-                <p className="text-zinc-400 text-xs pl-14">
-                  Prioritized scheduling for fleet members to ensure rapid
-                  turnarounds.
-                </p>
-              </div>
-            </div>
-
             {/* Bullet Points */}
-            <div className="space-y-4 mb-12 bg-zinc-50 p-8 rounded-2xl border border-zinc-100">
+            <div className="space-y-4 mb-6 bg-zinc-50 p-8 rounded-2xl border border-zinc-100">
               {[
                 "Direct & Clear Communication",
                 "Multi-brand & Heavy Duty Expertise",
