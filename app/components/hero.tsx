@@ -74,8 +74,9 @@ const HeroSlider = () => {
 
           {/* Short Description */}
           <p className="text-slate-100 leading-relaxed text-base mb-6">
-            Professional roadside assistance and fleet maintenance. We minimize
-            your downtime with rapid, certified heavy-duty solutions.
+            Rapid Solutions delivers professional roadside assistance and fleet
+            maintenance, helping you minimize downtime with certified
+            heavy-duty support.
           </p>
 
           {/* Buttons */}

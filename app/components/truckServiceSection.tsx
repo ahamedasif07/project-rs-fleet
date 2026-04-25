@@ -102,12 +102,12 @@ const TruckServiceSection: React.FC = () => {
               </h2>
 
               <p className="text-slate-600 leading-relaxed text-base mb-6">
-                Our certified technicians bring dealer-level expertise directly
+                RS certified technicians bring dealer-level expertise directly
                 to your fleet, minimizing transportation costs and maximizing
                 your operational uptime.
               </p>
 
-              <button className="relative z-30 group bg-primary hover:bg-zinc-900 text-white px-8 py-4 text-[10px] font-black transition-all duration-500 flex items-center justify-center gap-3 tracking-[0.2em] uppercase shadow-2xl rounded-md overflow-hidden">
+              <button className="relative z-30 group bg-primary hover:bg-zinc-900 text-white px-8 py-4 text-[14px] font-black transition-all duration-500 flex items-center justify-center gap-3  uppercase shadow-2xl rounded-md overflow-hidden">
                 {/* Hover background slide effect (Optional but looks premium) */}
                 <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out -z-10"></span>
                 Schedule Service

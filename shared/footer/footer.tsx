@@ -111,8 +111,9 @@ const Footer: React.FC = () => {
               />
             </Link>
             <p className="text-slate-600 leading-relaxed text-sm">
-              Providing professional hydraulic and mobile fleet services across
-              California and Nevada. 24/7 emergency support at your fingertips.
+              Rapid Solutions provides professional hydraulic and mobile fleet
+              services across California and Nevada, with 24/7 RS emergency
+              support always within reach.
             </p>
             <div className="flex gap-3">
               {socialLinks.map(({ Icon, href }, i) => (
@@ -198,7 +199,7 @@ const Footer: React.FC = () => {
         {/* --- Bottom Section --- */}
         <div className="border-t border-slate-100 pt-6 text-center">
           <p className="text-slate-500 text-sm font-medium">
-            © {currentYear} Fleet Services. Built with
+            © {currentYear} RS Fleet Services. Built With
             <span className="text-primary font-bold"> Passion</span>.
           </p>
         </div>

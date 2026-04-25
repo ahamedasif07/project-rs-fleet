@@ -72,9 +72,13 @@ const FleetLocations: React.FC = () => {
       <div className="max-w-[1400px] mx-auto">
         {/* --- Header --- */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-4">
-            Our <span className="text-primary">Locations</span>
+          <h2 className="mt-4 text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-5">
+            Rapid Solutions <span className="text-primary">Locations</span>
           </h2>
+          <p className="text-slate-600 leading-relaxed text-base mb-6">
+            Explore the RS service network across key California and Nevada
+            markets.
+          </p>
         </div>
 
         {/* --- Full Width Map --- */}

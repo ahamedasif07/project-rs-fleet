@@ -56,15 +56,15 @@ const FleetSavingsSection = () => {
               <div className="w-12 h-[1px] bg-zinc-200" />
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-black text-zinc-900 mb-4 leading-[1.1] uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight  pb-4">
               Unmatched Value For <br />
               <span className="text-primary ">Fleet Partners</span>
             </h2>
 
             <p className="text-slate-600 leading-relaxed text-base mb-6">
-              We provide cost-effective truck and vehicle repairs that keep your
-              business moving. Our specialized fleet plans are designed to
-              minimize downtime and maximize reliability.
+              At Rapid Solutions, we provide cost-effective truck and vehicle
+              repairs that keep your business moving. Our RS fleet plans are
+              designed to minimize downtime and maximize reliability.
             </p>
 
             {/* Bullet Points */}
