@@ -35,7 +35,7 @@ const RSFleetsPartner = () => {
   ];
 
   return (
-    <section className="bg-white py-24 px-4 sm:px-6 lg:px-8 font-sans overflow-hidden">
+    <section className="bg-[#FAFAF9] py-24 px-4 sm:px-6 lg:px-8 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Left Column: Strategic Content */}
