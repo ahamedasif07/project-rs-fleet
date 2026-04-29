@@ -11,20 +11,24 @@ import "swiper/css/effect-fade";
 
 const HeroSlider = () => {
   const images = [
-    // 1. Semi Truck on Road (Working)
-    "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80",
-
-    // 2. Heavy Duty Trailer/Truck (Working)
-    "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80",
-
-    // 3. UPDATED & WORKING: High-Quality Blue Semi-Truck on Highway
-
-    // 4. Truck Engine/Technical Detail (Working)
-    "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?auto=format&fit=crop&w=1920&q=80",
-
-    // 5. Large Truck on the Highway at Sunset (Working)
-    "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1920&q=80",
+    {
+      url: "https://i.ibb.co.com/F4J3qZXH/1-A119-B8-A-AF9-E-4473-9-D7-F-866-E18942-C57-1.png",
+      pos: "bottom center",
+    },
+    {
+      url: "https://i.ibb.co.com/SYdHBn8/CCD2-DA6-B-3-DF0-4-F66-B97-F-35-A4-EAFE80-C7-1.png",
+      pos: "bottom center",
+    },
+    {
+      url: "https://i.ibb.co.com/Kxqq2B2L/DCAF35-F9-EF53-48-DE-9-CB3-E72-C807-E0-EFF-1.png",
+      pos: "center right",
+    },
+    {
+      url: "https://i.ibb.co.com/XxPFpgcN/E3-F6-BE0-C-D6-A4-403-B-AE72-86-BDA5-AE2-B38-1.png",
+      pos: "bottom center",
+    },
   ];
+
   return (
     <section className="w-full bg-black overflow-hidden relative h-[500px] sm:h-[650px] lg:h-[850px]">
       {/* 1. Background Slider (Only Images Change) */}
@@ -41,8 +45,11 @@ const HeroSlider = () => {
           {images.map((img, index) => (
             <SwiperSlide key={index}>
               <div
-                className="w-full h-full bg-cover bg-center scale-110 animate-subtle-zoom"
-                style={{ backgroundImage: `url(${img})` }}
+                className="w-full h-full bg-cover animate-subtle-zoom"
+                style={{
+                  backgroundImage: `url(${img.url})`,
+                  backgroundPosition: img.pos,
+                }}
               >
                 {/* Dark Overlay for better text readability */}
                 <div className="absolute inset-0 bg-black/60" />
@@ -75,8 +82,8 @@ const HeroSlider = () => {
           {/* Short Description */}
           <p className="text-slate-100 leading-relaxed text-base mb-6">
             Rapid Solutions delivers professional roadside assistance and fleet
-            maintenance, helping you minimize downtime with certified
-            heavy-duty support.
+            maintenance, helping you minimize downtime with certified heavy-duty
+            support.
           </p>
 
           {/* Buttons */}
@@ -97,14 +104,14 @@ const HeroSlider = () => {
       <style jsx global>{`
         @keyframes subtle-zoom {
           from {
-            transform: scale(1.05);
+            transform: scale(1);
           }
           to {
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
         }
         .animate-subtle-zoom {
-          animation: subtle-zoom 15s infinite alternate ease-in-out;
+          animation: subtle-zoom 10s infinite alternate ease-in-out;
         }
       `}</style>
     </section>

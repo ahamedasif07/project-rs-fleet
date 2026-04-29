@@ -14,21 +14,21 @@ interface ServiceImage {
 const TruckServiceSection: React.FC = () => {
   const serviceImages: ServiceImage[] = [
     {
-      url: "https://i.ibb.co.com/fYLZnvbC/pexels-baljinder-singh-112079620-34106714.jpg",
+      url: "https://i.ibb.co.com/F4J3qZXH/1-A119-B8-A-AF9-E-4473-9-D7-F-866-E18942-C57-1.png",
       alt: "Mechanic working on heavy duty engine",
     },
     {
-      url: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80",
+      url: "https://i.ibb.co.com/SYdHBn8/CCD2-DA6-B-3-DF0-4-F66-B97-F-35-A4-EAFE80-C7-1.png",
 
       alt: "Fleet service truck onsite",
     },
     {
-      url: "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?auto=format&fit=crop&w=1920&q=80",
+      url: "https://i.ibb.co.com/Kxqq2B2L/DCAF35-F9-EF53-48-DE-9-CB3-E72-C807-E0-EFF-1.png",
 
       alt: "Diesel technician performing diagnostics",
     },
     {
-      url: "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1920&q=80",
+      url: "https://i.ibb.co.com/XxPFpgcN/E3-F6-BE0-C-D6-A4-403-B-AE72-86-BDA5-AE2-B38-1.png",
       alt: "Mobile repair unit working on truck",
     },
   ];
